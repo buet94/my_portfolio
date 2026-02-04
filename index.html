@@ -1,1 +1,98 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Centered Hero Page</title>    <style>        /* Basic Reset */        * {            margin: 0;            padding: 0;            box-sizing: border-box;        }        body {            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            line-height: 1.6;        }        /* The Hero Container */        .hero {            position: relative;            width: 100%;            height: 80vh; /* Adjust this to change the height of the top section */            display: flex;            align-items: center; /* Vertical Center */            justify-content: center; /* Horizontal Center */            overflow: hidden;            color: white; /* Text color */        }        /* The Image Background */        .hero-img {            position: absolute;            top: 0;            left: 0;            width: 100%;            height: 100%;            object-fit: cover; /* Ensures image covers area without stretching */            z-index: -2; /* Puts image behind text */        }        /* Overlay to make the title easier to read */        .overlay {            position: absolute;            top: 0;            left: 0;            width: 100%;            height: 100%;            background: rgba(0, 0, 0, 0.4); /* Darkens the image slightly */            z-index: -1;        }        /* The Centered Title */        .hero h1 {            font-size: 4rem;            text-align: center;            text-transform: uppercase;            letter-spacing: 5px;            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);            padding: 20px;        }        /* Responsive adjustments for mobile */        @media (max-width: 768px) {            .hero h1 {                font-size: 2.5rem;            }        }        .content {            padding: 50px;            text-align: center;        }    </style></head><body>    <!-- Hero Section -->    <header class="hero">        <!-- Replace the URL below with your actual image path or URL -->        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072" alt="Background" class="hero-img">                <!-- Dark overlay to ensure text is visible -->        <div class="overlay"></div>        <!-- The Middle Title -->        <h1>Welcome to Haider's Site</h1>    </header>    <!-- Main Content below the Hero -->    <main class="content">        <h2>About This Design</h2>        <p>The image is positioned at the top of the viewport using absolute positioning, while the title is centered using CSS Flexbox.</p>    </main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Hero Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* The Hero Container */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 80vh; /* Adjust this to change the height of the top section */
+            display: flex;
+            align-items: center; /* Vertical Center */
+            justify-content: center; /* Horizontal Center */
+            overflow: hidden;
+            color: white; /* Text color */
+        }
+
+        /* The Image Background */
+        .hero-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image covers area without stretching */
+            z-index: -2; /* Puts image behind text */
+        }
+
+        /* Overlay to make the title easier to read */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Darkens the image slightly */
+            z-index: -1;
+        }
+
+        /* The Centered Title */
+        .hero h1 {
+            font-size: 4rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <!-- Replace the URL below with your actual image path or URL -->
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072" alt="Background" class="hero-img">
+        
+        <!-- Dark overlay to ensure text is visible -->
+        <div class="overlay"></div>
+
+        <!-- The Middle Title -->
+        <h1>Welcome to Haider's Site</h1>
+    </header>
+
+    <!-- Main Content below the Hero -->
+    <main class="content">
+        <h2>About This Design</h2>
+        <p>The image is positioned at the top of the viewport using absolute positioning, while the title is centered using CSS Flexbox.However, this is still in design mode!</p>
+    </main>
+
+</body>
+</html>
